@@ -1,7 +1,17 @@
 # Terraform ignore rules
 .terraform*
 *.tfstate
-*.tfstate.*
+aws.env/us-east/.terraform/
+.terraform*
+examples/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+terraform.tfvars
+variables.hcl
+ignore*
+*.token
+*.pem*.tfstate.*
 terraform.tfstate.backup
 
 # Byte-compiled / optimized / DLL files
