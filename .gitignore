@@ -1,6 +1,5 @@
 # Terraform ignore rules
-.terraform*
-*.tfstate
+.vagrant/
 aws.env/us-east/.terraform/
 .terraform*
 examples/
@@ -9,10 +8,10 @@ examples/
 .terraform.lock.hcl
 terraform.tfvars
 variables.hcl
+Vagrantfile
 ignore*
 *.token
-*.pem*.tfstate.*
-terraform.tfstate.backup
+*.pem
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -93,3 +92,4 @@ target/
 # IPython
 profile_default/
 ipython
+tfkey.pem
