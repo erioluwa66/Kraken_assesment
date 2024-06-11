@@ -18,6 +18,7 @@ data "local_file" "nomad_user_data" {
 resource "aws_instance" "nomad" {
   ami           = "ami-033fabdd332044f06" # Amazon Linux 2 AMI
   instance_type = "t2.micro"
+  key_name = "kraken-assesment" #add this line
 
   user_data = templatefile("${path.module}/nomad_user_data.tpl", {
     NOMAD_VERSION = "1.4.3"
